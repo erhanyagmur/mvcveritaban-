@@ -1,0 +1,8 @@
+dotnet add package microsoft.entityframeworkcore
+dotnet add package microsoft.entityframeworkcore.sqlserver  
+
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.3
+
+
+ dotnet ef dbcontext scaffold "server=.\sqlexpress;database=StudentDB;trusted_connection=true;integrated security=true;TrustServerCertificate=True;" microsoft.entityframeworkcore.sqlserver -o Models
